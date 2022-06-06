@@ -1,0 +1,7 @@
+.cache/
+.vscode/
+node_modules/
+public
+**/*.DS_Store
+.env.*
+package-lock.json
