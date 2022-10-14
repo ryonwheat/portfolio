@@ -2,20 +2,28 @@ import React, { Component } from "react"
 import PageTransition from "gatsby-plugin-page-transitions"
 import { Transition } from "react-transition-group"
 
+const transitionTime = 350
+
 const pageTransitionEvent = "gatsby-plugin-page-transition::exit"
 const defaultStyles = {
-  transition: "left 500ms cubic-bezier(0.47, 0, 0.75, 0.72)",
-  left: "100%",
-  position: "absolute",
-  width: "100%",
+  transition: `opacity ${transitionTime}ms ease-in`,
+  opacity: "1",
+
+  //   transition: "left 500ms cubic-bezier(0.47, 0, 0.75, 0.72)",
+  //   left: "100%",
+  //   position: "absolute",
+  //   width: "100%",
 }
 const transitionStyles = {
-  entering: { left: "0%", opacity: "0.5"},
-  entered: { left: "0%", opacity: "1" },
-  exiting: { left: "100%", opacity: "0" },
+  entering: { opacity: "0" },
+  entered: { opacity: "1" },
+  exiting: { opacity: "0" },
+  exited: { opacity: "0" },
+  //   entering: { left: "0%", opacity: "0.5" },
+  //   entered: { left: "0%", opacity: "1" },
+  //   exiting: { left: "100%", opacity: "0" },
 }
 
-const transitionTime = 500
 const fadeDefault = {
   transition: `opacity ${transitionTime}ms ease-in`,
   opacity: "1",

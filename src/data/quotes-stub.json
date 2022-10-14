@@ -1,0 +1,540 @@
+[
+  {
+    "allQuote": {
+      "nodes": [
+        {
+          "id": "6b1760ee-498d-567d-a309-b00ca4767618",
+          "a": "Dr. Seuss",
+          "c": "89",
+          "h": "<blockquote>&ldquo;Today you are you, that is truer than true. There is no one alive who is you-er than you.&rdquo; &mdash; <footer>Dr. Seuss</footer></blockquote>",
+          "q": "Today you are you, that is truer than true. There is no one alive who is you-er than you."
+        },
+        {
+          "id": "70b23833-8d3b-514e-ad67-07c7e3384e92",
+          "a": "Thomas Jefferson",
+          "c": "87",
+          "h": "<blockquote>&ldquo;In matters of style, swim with the current; in matters of principle, stand like a rock.&rdquo; &mdash; <footer>Thomas Jefferson</footer></blockquote>",
+          "q": "In matters of style, swim with the current; in matters of principle, stand like a rock."
+        },
+        {
+          "id": "e24341c9-90bb-5dd9-ac44-8dce28fd6844",
+          "a": "Audrey Hepburn",
+          "c": "78",
+          "h": "<blockquote>&ldquo;Opportunities don't often come along. So, when they do, you have to grab them.&rdquo; &mdash; <footer>Audrey Hepburn</footer></blockquote>",
+          "q": "Opportunities don't often come along. So, when they do, you have to grab them."
+        },
+        {
+          "id": "24cc67ca-4ab1-5219-8b28-ccdbc4d1a18b",
+          "a": "Henry David Thoreau",
+          "c": "78",
+          "h": "<blockquote>&ldquo;Go confidently in the direction of your dreams! Live the life you've imagined.&rdquo; &mdash; <footer>Henry David Thoreau</footer></blockquote>",
+          "q": "Go confidently in the direction of your dreams! Live the life you've imagined."
+        },
+        {
+          "id": "56ed8941-a464-5a34-9adc-7329b9986ef5",
+          "a": "Will Rogers",
+          "c": "67",
+          "h": "<blockquote>&ldquo;The health of nations is more important than the wealth of nations.&rdquo; &mdash; <footer>Will Rogers</footer></blockquote>",
+          "q": "The health of nations is more important than the wealth of nations."
+        },
+        {
+          "id": "c5893cd4-82d0-5adc-bc69-fa2fddd9b7d7",
+          "a": "Carlos Ruiz Zafon",
+          "c": "108",
+          "h": "<blockquote>&ldquo;Making money isn't hard in itself... What's hard is to earn it doing something worth devoting one's life to.&rdquo; &mdash; <footer>Carlos Ruiz Zafon</footer></blockquote>",
+          "q": "Making money isn't hard in itself... What's hard is to earn it doing something worth devoting one's life to."
+        },
+        {
+          "id": "f15d2079-3043-5ed3-bdd4-a1c8389c44b1",
+          "a": "Unknown",
+          "c": "57",
+          "h": "<blockquote>&ldquo;Never argue with ignorance. It only leads to frustration.&rdquo; &mdash; <footer>Unknown</footer></blockquote>",
+          "q": "Never argue with ignorance. It only leads to frustration."
+        },
+        {
+          "id": "590cb508-c33c-5246-8fba-7c2311a504bd",
+          "a": "Conrad Hilton",
+          "c": "112",
+          "h": "<blockquote>&ldquo;Success seems to be connected to action. Successful people keep moving. They make mistakes, but they don't quit.&rdquo; &mdash; <footer>Conrad Hilton</footer></blockquote>",
+          "q": "Success seems to be connected to action. Successful people keep moving. They make mistakes, but they don't quit."
+        },
+        {
+          "id": "383ad9d7-381a-597c-9f29-d35ca97e83f4",
+          "a": "Rumi",
+          "c": "72",
+          "h": "<blockquote>&ldquo;Raise your words, not voice. It is rain that grows flowers, not thunder.&rdquo; &mdash; <footer>Rumi</footer></blockquote>",
+          "q": "Raise your words, not voice. It is rain that grows flowers, not thunder."
+        },
+        {
+          "id": "d0d66d2d-e580-5817-b618-cf175f48dda9",
+          "a": "Gurbaksh Chahal",
+          "c": "71",
+          "h": "<blockquote>&ldquo;There is an essence of when you are fearless, you become more creative.&rdquo; &mdash; <footer>Gurbaksh Chahal</footer></blockquote>",
+          "q": "There is an essence of when you are fearless, you become more creative."
+        },
+        {
+          "id": "8e49e034-ddac-50ea-ad42-ca6dd326d0fa",
+          "a": "Dogen",
+          "c": "84",
+          "h": "<blockquote>&ldquo;Do not follow the ideas of others, but learn to listen to the voice within yourself.&rdquo; &mdash; <footer>Dogen</footer></blockquote>",
+          "q": "Do not follow the ideas of others, but learn to listen to the voice within yourself."
+        },
+        {
+          "id": "88476504-b873-5f33-bc92-813f95b4d98c",
+          "a": "William Faulkner",
+          "c": "83",
+          "h": "<blockquote>&ldquo;You cannot swim for new horizons until you have courage to lose sight of the shore.&rdquo; &mdash; <footer>William Faulkner</footer></blockquote>",
+          "q": "You cannot swim for new horizons until you have courage to lose sight of the shore."
+        },
+        {
+          "id": "decc1950-5e29-5354-871a-21d844d5c8a7",
+          "a": "Helen Keller",
+          "c": "46",
+          "h": "<blockquote>&ldquo;Life is either a daring adventure, or nothing.&rdquo; &mdash; <footer>Helen Keller</footer></blockquote>",
+          "q": "Life is either a daring adventure, or nothing."
+        },
+        {
+          "id": "ed4c9b04-1975-59a1-afd1-f41bb438a526",
+          "a": "Mother Teresa",
+          "c": "63",
+          "h": "<blockquote>&ldquo;It's not how much we give but how much love we put into giving.&rdquo; &mdash; <footer>Mother Teresa</footer></blockquote>",
+          "q": "It's not how much we give but how much love we put into giving."
+        },
+        {
+          "id": "b8106f62-bc5c-569d-9154-bf7c5d5ff808",
+          "a": "Hans Christian Andersen",
+          "c": "60",
+          "h": "<blockquote>&ldquo;It is the power of thought that gives man power over nature.&rdquo; &mdash; <footer>Hans Christian Andersen</footer></blockquote>",
+          "q": "It is the power of thought that gives man power over nature."
+        },
+        {
+          "id": "dfceefd4-69d9-595d-b033-b8c77a8bd9ad",
+          "a": "James Allen",
+          "c": "101",
+          "h": "<blockquote>&ldquo;A man sooner or later discovers that he is the master-gardener of his soul, the director of his life.&rdquo; &mdash; <footer>James Allen</footer></blockquote>",
+          "q": "A man sooner or later discovers that he is the master-gardener of his soul, the director of his life."
+        },
+        {
+          "id": "feb6d0fa-5ec9-5f49-aa77-e91f45acbfd5",
+          "a": "Franz Kafka",
+          "c": "77",
+          "h": "<blockquote>&ldquo;One of the first signs of the beginning of understanding is the wish to die. &rdquo; &mdash; <footer>Franz Kafka</footer></blockquote>",
+          "q": "One of the first signs of the beginning of understanding is the wish to die. "
+        },
+        {
+          "id": "67d81543-e34c-5e49-b3b0-1509b6ab8e33",
+          "a": "Bodhidharma",
+          "c": "84",
+          "h": "<blockquote>&ldquo;Many roads lead to the path, but basically there are only two: reason and practice. &rdquo; &mdash; <footer>Bodhidharma</footer></blockquote>",
+          "q": "Many roads lead to the path, but basically there are only two: reason and practice. "
+        },
+        {
+          "id": "eed9be46-86f7-5855-829a-32ed8b37c34e",
+          "a": "Gary Keller",
+          "c": "36",
+          "h": "<blockquote>&ldquo;The pursuit of mastery bears gifts. &rdquo; &mdash; <footer>Gary Keller</footer></blockquote>",
+          "q": "The pursuit of mastery bears gifts. "
+        },
+        {
+          "id": "56b9c51c-5973-5072-8e00-f881b7897116",
+          "a": "Robert Kiyosaki",
+          "c": "77",
+          "h": "<blockquote>&ldquo;We learn to walk by falling down. If we never fell down, we would never walk.&rdquo; &mdash; <footer>Robert Kiyosaki</footer></blockquote>",
+          "q": "We learn to walk by falling down. If we never fell down, we would never walk."
+        },
+        {
+          "id": "acbf7a7a-a7c6-549a-9930-1ec87d247e50",
+          "a": "Kamal Ravikant",
+          "c": "77",
+          "h": "<blockquote>&ldquo;Peace is letting it be. Letting life flow, letting emotions flow through you.&rdquo; &mdash; <footer>Kamal Ravikant</footer></blockquote>",
+          "q": "Peace is letting it be. Letting life flow, letting emotions flow through you."
+        },
+        {
+          "id": "3723dbde-024a-5bde-ad1f-9e02dfd6cb57",
+          "a": "Elon Musk",
+          "c": "108",
+          "h": "<blockquote>&ldquo;If life is a video game, the graphics are great, but the plot is confusing and the tutorial is way too long.&rdquo; &mdash; <footer>Elon Musk</footer></blockquote>",
+          "q": "If life is a video game, the graphics are great, but the plot is confusing and the tutorial is way too long."
+        },
+        {
+          "id": "6009afc1-0866-57a2-baf5-de3c91413b64",
+          "a": "Wayne Dyer",
+          "c": "67",
+          "h": "<blockquote>&ldquo;When you judge another, you do not define them, you define yourself&rdquo; &mdash; <footer>Wayne Dyer</footer></blockquote>",
+          "q": "When you judge another, you do not define them, you define yourself"
+        },
+        {
+          "id": "058a3126-35a1-54c9-bedf-8bb707e376c4",
+          "a": "Nelson Mandela",
+          "c": "86",
+          "h": "<blockquote>&ldquo;You can start changing our world for the better daily, no matter how small the action.&rdquo; &mdash; <footer>Nelson Mandela</footer></blockquote>",
+          "q": "You can start changing our world for the better daily, no matter how small the action."
+        },
+        {
+          "id": "de0aaa11-75e8-56f7-8d4e-abea755c87f7",
+          "a": "Ming-Dao Deng",
+          "c": "53",
+          "h": "<blockquote>&ldquo;In nature there is no alienation. Everything belongs.&rdquo; &mdash; <footer>Ming-Dao Deng</footer></blockquote>",
+          "q": "In nature there is no alienation. Everything belongs."
+        },
+        {
+          "id": "7a8904db-5708-54f9-8c0e-7a57b257cd6c",
+          "a": "Voltaire",
+          "c": "82",
+          "h": "<blockquote>&ldquo;The more often a stupidity is repeated, the more it gets the appearance of wisdom.&rdquo; &mdash; <footer>Voltaire</footer></blockquote>",
+          "q": "The more often a stupidity is repeated, the more it gets the appearance of wisdom."
+        },
+        {
+          "id": "6db32257-f51b-541e-9ae0-03b629b08f60",
+          "a": "Steve Maraboli",
+          "c": "86",
+          "h": "<blockquote>&ldquo;Cry. Forgive. Learn. Move on. Let your tears water the seeds of your future happiness.&rdquo; &mdash; <footer>Steve Maraboli</footer></blockquote>",
+          "q": "Cry. Forgive. Learn. Move on. Let your tears water the seeds of your future happiness."
+        },
+        {
+          "id": "71f92672-7a1f-5022-849e-1d6d560bde06",
+          "a": "Mary Engelbreit",
+          "c": "57",
+          "h": "<blockquote>&ldquo;Learn from the rejection and turn it into an opportunity!&rdquo; &mdash; <footer>Mary Engelbreit</footer></blockquote>",
+          "q": "Learn from the rejection and turn it into an opportunity!"
+        },
+        {
+          "id": "80e46913-4712-5758-9cb8-57c005b9ab29",
+          "a": "Kilian Jornet",
+          "c": "69",
+          "h": "<blockquote>&ldquo;Sometimes you have to shut your eyes, so you can see the real beauty.&rdquo; &mdash; <footer>Kilian Jornet</footer></blockquote>",
+          "q": "Sometimes you have to shut your eyes, so you can see the real beauty."
+        },
+        {
+          "id": "9dd7e6d1-b6d8-58db-bb28-6b2d3920e67b",
+          "a": "Henry Ford",
+          "c": "63",
+          "h": "<blockquote>&ldquo;Nothing is particularly hard if you divide it into small jobs. &rdquo; &mdash; <footer>Henry Ford</footer></blockquote>",
+          "q": "Nothing is particularly hard if you divide it into small jobs. "
+        },
+        {
+          "id": "b4c9c62d-112a-5374-bdc1-fd0c8b113646",
+          "a": "St. Jerome",
+          "c": "89",
+          "h": "<blockquote>&ldquo;Good, better, best. Never let it rest. 'Til your good is better and your better is best. &rdquo; &mdash; <footer>St. Jerome</footer></blockquote>",
+          "q": "Good, better, best. Never let it rest. 'Til your good is better and your better is best. "
+        },
+        {
+          "id": "3d408354-bb72-5e8a-b201-3bcbb07069bb",
+          "a": "Lolly Daskal",
+          "c": "74",
+          "h": "<blockquote>&ldquo;Do not allow your inner doubts to keep you from achieving what you can do.&rdquo; &mdash; <footer>Lolly Daskal</footer></blockquote>",
+          "q": "Do not allow your inner doubts to keep you from achieving what you can do."
+        },
+        {
+          "id": "a2f2d6ef-b6c5-5f58-84ef-1d389abe496c",
+          "a": "George Eliot",
+          "c": "84",
+          "h": "<blockquote>&ldquo;It will never rain roses: when we want to have more roses, we must plant more roses.&rdquo; &mdash; <footer>George Eliot</footer></blockquote>",
+          "q": "It will never rain roses: when we want to have more roses, we must plant more roses."
+        },
+        {
+          "id": "5418a790-d013-5c07-a564-ee5717a3091d",
+          "a": "Ronald Reagan",
+          "c": "86",
+          "h": "<blockquote>&ldquo;Many a man has failed because he had his wishbone where his backbone should have been.&rdquo; &mdash; <footer>Ronald Reagan</footer></blockquote>",
+          "q": "Many a man has failed because he had his wishbone where his backbone should have been."
+        },
+        {
+          "id": "c64fc74e-3c6b-54aa-b46b-b64d91165554",
+          "a": "Stephen Hawking",
+          "c": "47",
+          "h": "<blockquote>&ldquo;Intelligence is the ability to adapt to change.&rdquo; &mdash; <footer>Stephen Hawking</footer></blockquote>",
+          "q": "Intelligence is the ability to adapt to change."
+        },
+        {
+          "id": "44dfd206-1f5c-53f1-848c-d8c46b0af125",
+          "a": "Maxime Lagace",
+          "c": "65",
+          "h": "<blockquote>&ldquo;Life can be the scariest and most beautiful thing simultaneously.&rdquo; &mdash; <footer>Maxime Lagace</footer></blockquote>",
+          "q": "Life can be the scariest and most beautiful thing simultaneously."
+        },
+        {
+          "id": "b898af44-22c9-5f09-be25-2a55f9f58a91",
+          "a": "John Eliot",
+          "c": "162",
+          "h": "<blockquote>&ldquo;Confidence is not a guarantee of success, but a pattern of thinking that will improve your likelihood of success, a tenacious search for ways to make things work.&rdquo; &mdash; <footer>John Eliot</footer></blockquote>",
+          "q": "Confidence is not a guarantee of success, but a pattern of thinking that will improve your likelihood of success, a tenacious search for ways to make things work."
+        },
+        {
+          "id": "c34ae59e-4efe-52f8-b0aa-b6e9a3b2ea62",
+          "a": "Betty White",
+          "c": "55",
+          "h": "<blockquote>&ldquo;Friendship takes time and energy if it's going to work.&rdquo; &mdash; <footer>Betty White</footer></blockquote>",
+          "q": "Friendship takes time and energy if it's going to work."
+        },
+        {
+          "id": "c8850899-92b0-50bf-b1e9-08f41a907a44",
+          "a": "Michael Jordan",
+          "c": "48",
+          "h": "<blockquote>&ldquo;Heart is what separates the good from the great.&rdquo; &mdash; <footer>Michael Jordan</footer></blockquote>",
+          "q": "Heart is what separates the good from the great."
+        },
+        {
+          "id": "79a3fdce-93af-570b-b315-c13ef4e00075",
+          "a": "John Wooden",
+          "c": "65",
+          "h": "<blockquote>&ldquo;Don't give up on your dreams, or your dreams will give up on you.&rdquo; &mdash; <footer>John Wooden</footer></blockquote>",
+          "q": "Don't give up on your dreams, or your dreams will give up on you."
+        },
+        {
+          "id": "251c5863-f6d5-5977-8e70-35525a8e82b0",
+          "a": "Samuel Beckett",
+          "c": "78",
+          "h": "<blockquote>&ldquo;Any fool can turn a blind eye but who knows what the ostrich sees in the sand.&rdquo; &mdash; <footer>Samuel Beckett</footer></blockquote>",
+          "q": "Any fool can turn a blind eye but who knows what the ostrich sees in the sand."
+        },
+        {
+          "id": "79e4d6b4-019d-5303-939b-69a8db045087",
+          "a": "Richard Bach",
+          "c": "61",
+          "h": "<blockquote>&ldquo;A tiny change today brings a dramatically different tomorrow.&rdquo; &mdash; <footer>Richard Bach</footer></blockquote>",
+          "q": "A tiny change today brings a dramatically different tomorrow."
+        },
+        {
+          "id": "52af7641-9217-58ad-9b71-77e003cb84a4",
+          "a": "Stephen King",
+          "c": "50",
+          "h": "<blockquote>&ldquo;Fear can hold you prisoner. Hope can set you free.&rdquo; &mdash; <footer>Stephen King</footer></blockquote>",
+          "q": "Fear can hold you prisoner. Hope can set you free."
+        },
+        {
+          "id": "cd4db350-d913-5340-9b47-3300d5e0de0e",
+          "a": "Thomas Edison",
+          "c": "71",
+          "h": "<blockquote>&ldquo;Genius is one percent inspiration and ninety-nine percent perspiration.&rdquo; &mdash; <footer>Thomas Edison</footer></blockquote>",
+          "q": "Genius is one percent inspiration and ninety-nine percent perspiration."
+        },
+        {
+          "id": "ee713501-807e-59cb-bd5a-94782b45911a",
+          "a": "Norman Vincent Peale",
+          "c": "35",
+          "h": "<blockquote>&ldquo;Live your life and forget your age.&rdquo; &mdash; <footer>Norman Vincent Peale</footer></blockquote>",
+          "q": "Live your life and forget your age."
+        },
+        {
+          "id": "9b7e7e3b-29da-5e85-a0d5-5abfa2d84139",
+          "a": "Elvis Presley",
+          "c": "63",
+          "h": "<blockquote>&ldquo;Sad thing is, you can still love someone and be wrong for them.&rdquo; &mdash; <footer>Elvis Presley</footer></blockquote>",
+          "q": "Sad thing is, you can still love someone and be wrong for them."
+        },
+        {
+          "id": "5fbdb98b-5a94-5bd6-a774-f17602bd21cb",
+          "a": "Kahlil Gibran",
+          "c": "77",
+          "h": "<blockquote>&ldquo;Progress lies not in enhancing what is, but in advancing toward what will be.&rdquo; &mdash; <footer>Kahlil Gibran</footer></blockquote>",
+          "q": "Progress lies not in enhancing what is, but in advancing toward what will be."
+        },
+        {
+          "id": "36f1a252-86f6-5a3c-a6be-aa3dffdd7786",
+          "a": "Margaret Mead",
+          "c": "107",
+          "h": "<blockquote>&ldquo;One of the oldest human needs is having someone to wonder where you are when you don't come home at night. &rdquo; &mdash; <footer>Margaret Mead</footer></blockquote>",
+          "q": "One of the oldest human needs is having someone to wonder where you are when you don't come home at night. "
+        },
+        {
+          "id": "7d1f65b2-0342-5403-998c-ac7926170aba",
+          "a": "Morgan Wootten",
+          "c": "29",
+          "h": "<blockquote>&ldquo;Leadership starts at the top.&rdquo; &mdash; <footer>Morgan Wootten</footer></blockquote>",
+          "q": "Leadership starts at the top."
+        },
+        {
+          "id": "a11dcf7c-0c06-58e8-8d2c-aa595fa7ee85",
+          "a": "T.S. Eliot",
+          "c": "143",
+          "h": "<blockquote>&ldquo;We must not cease from exploration. And the end of all our exploring will be to arrive where we began and to know the place for the first time.&rdquo; &mdash; <footer>T.S. Eliot</footer></blockquote>",
+          "q": "We must not cease from exploration. And the end of all our exploring will be to arrive where we began and to know the place for the first time."
+        },
+        {
+          "id": "907df4eb-b16b-5642-af0a-1cdc5e186e44",
+          "a": "Brian Tracy",
+          "c": "100",
+          "h": "<blockquote>&ldquo;Most people achieved their greatest success one step beyond what looked like their greatest failure.&rdquo; &mdash; <footer>Brian Tracy</footer></blockquote>",
+          "q": "Most people achieved their greatest success one step beyond what looked like their greatest failure."
+        },
+        {
+          "id": "c0517b4f-0e8e-563f-8e31-776ea6405544",
+          "a": "Robert F. Kennedy",
+          "c": "47",
+          "h": "<blockquote>&ldquo;The future is not a gift. It is an achievement.&rdquo; &mdash; <footer>Robert F. Kennedy</footer></blockquote>",
+          "q": "The future is not a gift. It is an achievement."
+        },
+        {
+          "id": "2bfcb936-f4a6-57c1-a36d-7a648e905601",
+          "a": "Bob Proctor",
+          "c": "74",
+          "h": "<blockquote>&ldquo;You are the only problem you will ever have and you are the only solution.&rdquo; &mdash; <footer>Bob Proctor</footer></blockquote>",
+          "q": "You are the only problem you will ever have and you are the only solution."
+        },
+        {
+          "id": "cb755016-5a67-5bdd-89a6-12d085b65c04",
+          "a": "Mark Twain",
+          "c": "72",
+          "h": "<blockquote>&ldquo;Everyone is a moon, and has a dark side which he never shows to anybody.&rdquo; &mdash; <footer>Mark Twain</footer></blockquote>",
+          "q": "Everyone is a moon, and has a dark side which he never shows to anybody."
+        },
+        {
+          "id": "bfc09045-1461-5f61-bcbb-67a43e5f37c0",
+          "a": "Pablo Picasso",
+          "c": "83",
+          "h": "<blockquote>&ldquo;Others have seen what is and asked why. I have seen what could be and asked why not&rdquo; &mdash; <footer>Pablo Picasso</footer></blockquote>",
+          "q": "Others have seen what is and asked why. I have seen what could be and asked why not"
+        },
+        {
+          "id": "93da3c11-398c-5435-88fe-8229bd3223a1",
+          "a": "Sonia Ricotti",
+          "c": "115",
+          "h": "<blockquote>&ldquo;We can choose to look at whatever we want.  We can look at what's wrong in our life or we can look at what's right.&rdquo; &mdash; <footer>Sonia Ricotti</footer></blockquote>",
+          "q": "We can choose to look at whatever we want.  We can look at what's wrong in our life or we can look at what's right."
+        },
+        {
+          "id": "e2086c7c-ab2b-5c56-b242-59fa429947c9",
+          "a": "Ayn Rand",
+          "c": "78",
+          "h": "<blockquote>&ldquo;The ladder of success is best climbed by stepping on the rungs of opportunity.&rdquo; &mdash; <footer>Ayn Rand</footer></blockquote>",
+          "q": "The ladder of success is best climbed by stepping on the rungs of opportunity."
+        },
+        {
+          "id": "49d835fc-9524-5fdf-b470-2d963c572110",
+          "a": "Roy T. Bennett",
+          "c": "70",
+          "h": "<blockquote>&ldquo;Sometimes you have to lose all you have to find out who you truly are.&rdquo; &mdash; <footer>Roy T. Bennett</footer></blockquote>",
+          "q": "Sometimes you have to lose all you have to find out who you truly are."
+        },
+        {
+          "id": "92f39fce-edf8-55a9-8945-c79407405877",
+          "a": "Theodore Roosevelt",
+          "c": "41",
+          "h": "<blockquote>&ldquo;Believe you can and you're halfway there.&rdquo; &mdash; <footer>Theodore Roosevelt</footer></blockquote>",
+          "q": "Believe you can and you're halfway there."
+        },
+        {
+          "id": "e9fbeba3-d2be-578d-8d5b-d2f818b0a26c",
+          "a": "Carl Jung",
+          "c": "76",
+          "h": "<blockquote>&ldquo;No tree, it is said, can grow to heaven unless its roots reach down to hell.&rdquo; &mdash; <footer>Carl Jung</footer></blockquote>",
+          "q": "No tree, it is said, can grow to heaven unless its roots reach down to hell."
+        },
+        {
+          "id": "611865bc-8df7-5e4b-b81a-5b69158387bc",
+          "a": "Dudley Field Malone",
+          "c": "73",
+          "h": "<blockquote>&ldquo;I have never in my life learned anything from any man who agreed with me.&rdquo; &mdash; <footer>Dudley Field Malone</footer></blockquote>",
+          "q": "I have never in my life learned anything from any man who agreed with me."
+        },
+        {
+          "id": "187be517-0ff4-5f2c-8940-666b66f0a480",
+          "a": "Jim Rohn",
+          "c": "80",
+          "h": "<blockquote>&ldquo;Formal education will make you a living, self-education will make you a fortune.&rdquo; &mdash; <footer>Jim Rohn</footer></blockquote>",
+          "q": "Formal education will make you a living, self-education will make you a fortune."
+        },
+        {
+          "id": "92966900-1e3f-5745-abef-6e70f2486f39",
+          "a": "Andrew Carnegie",
+          "c": "68",
+          "h": "<blockquote>&ldquo;Success is getting what you want. Happiness is wanting what you get.&rdquo; &mdash; <footer>Andrew Carnegie</footer></blockquote>",
+          "q": "Success is getting what you want. Happiness is wanting what you get."
+        },
+        {
+          "id": "889cec26-3318-5846-b4a2-2a61d1af59a7",
+          "a": "Les Brown",
+          "c": "62",
+          "h": "<blockquote>&ldquo;Act the way you want to be and soon you'll be the way you act.&rdquo; &mdash; <footer>Les Brown</footer></blockquote>",
+          "q": "Act the way you want to be and soon you'll be the way you act."
+        },
+        {
+          "id": "48cc344d-7dcc-5024-b7c2-61c742c08c6d",
+          "a": "Bette Midler",
+          "c": "75",
+          "h": "<blockquote>&ldquo;Cherish forever what makes you unique, cuz you're really a yawn if it goes.&rdquo; &mdash; <footer>Bette Midler</footer></blockquote>",
+          "q": "Cherish forever what makes you unique, cuz you're really a yawn if it goes."
+        },
+        {
+          "id": "9696e8ed-0ac3-5f6c-afa3-82f99b3d3bf1",
+          "a": "Chinese Proverb",
+          "c": "93",
+          "h": "<blockquote>&ldquo;Listening well is as powerful as talking well, and is also as essential to true conversation.&rdquo; &mdash; <footer>Chinese Proverb</footer></blockquote>",
+          "q": "Listening well is as powerful as talking well, and is also as essential to true conversation."
+        },
+        {
+          "id": "8653deab-522b-563d-a68b-8e53006b9ecb",
+          "a": "Robert Frost",
+          "c": "139",
+          "h": "<blockquote>&ldquo;Half the world is composed of people who have something to say and can't, and the other half who have nothing to say and keep on saying it.&rdquo; &mdash; <footer>Robert Frost</footer></blockquote>",
+          "q": "Half the world is composed of people who have something to say and can't, and the other half who have nothing to say and keep on saying it."
+        },
+        {
+          "id": "190b934c-e5e6-58c8-a465-4b34a66e89e3",
+          "a": "Meister Eckhart",
+          "c": "49",
+          "h": "<blockquote>&ldquo;Be willing to be a beginner every single morning.&rdquo; &mdash; <footer>Meister Eckhart</footer></blockquote>",
+          "q": "Be willing to be a beginner every single morning."
+        },
+        {
+          "id": "f07a57e7-2566-5b4e-b1e1-d55d77d62f5d",
+          "a": "Nikola Tesla",
+          "c": "52",
+          "h": "<blockquote>&ldquo;It's not the love you make. It's the love you give. &rdquo; &mdash; <footer>Nikola Tesla</footer></blockquote>",
+          "q": "It's not the love you make. It's the love you give. "
+        },
+        {
+          "id": "0524f1b1-2633-5b89-9dee-9c9416d691ec",
+          "a": "Napoleon Hill",
+          "c": "50",
+          "h": "<blockquote>&ldquo;A Quitter never wins - and - a Winner never quits.&rdquo; &mdash; <footer>Napoleon Hill</footer></blockquote>",
+          "q": "A Quitter never wins - and - a Winner never quits."
+        },
+        {
+          "id": "eb61eaed-5cf0-52c8-b314-7177602bc763",
+          "a": "Dalai Lama",
+          "c": "98",
+          "h": "<blockquote>&ldquo;If you want others to be happy, practice compassion. If you want to be happy, practice compassion.&rdquo; &mdash; <footer>Dalai Lama</footer></blockquote>",
+          "q": "If you want others to be happy, practice compassion. If you want to be happy, practice compassion."
+        },
+        {
+          "id": "9815d0a4-45da-5630-9acb-6da5a8fc216f",
+          "a": "Joan Rivers",
+          "c": "55",
+          "h": "<blockquote>&ldquo;Life goes by fast. Enjoy it. Calm down. It's all funny.&rdquo; &mdash; <footer>Joan Rivers</footer></blockquote>",
+          "q": "Life goes by fast. Enjoy it. Calm down. It's all funny."
+        },
+        {
+          "id": "c491c6bf-dc5b-5df0-879c-2438d2e8ad6f",
+          "a": "George Washington",
+          "c": "129",
+          "h": "<blockquote>&ldquo;Associate yourself with men of good quality, if you esteem your own reputation; for 'tis better to be alone than in bad company. &rdquo; &mdash; <footer>George Washington</footer></blockquote>",
+          "q": "Associate yourself with men of good quality, if you esteem your own reputation; for 'tis better to be alone than in bad company. "
+        },
+        {
+          "id": "b67c4b1d-df64-5af2-a960-507658643bb6",
+          "a": "Charles Dickens",
+          "c": "109",
+          "h": "<blockquote>&ldquo;Family not only needs to consist of merely those whom we share blood, but also of those whom we'd give blood.&rdquo; &mdash; <footer>Charles Dickens</footer></blockquote>",
+          "q": "Family not only needs to consist of merely those whom we share blood, but also of those whom we'd give blood."
+        },
+        {
+          "id": "cb46f44e-e71d-51cb-9ff8-4783c5d487b6",
+          "a": "Robin Sharma",
+          "c": "73",
+          "h": "<blockquote>&ldquo;Success on the outside means nothing unless you also have success within.&rdquo; &mdash; <footer>Robin Sharma</footer></blockquote>",
+          "q": "Success on the outside means nothing unless you also have success within."
+        },
+        {
+          "id": "6a0d4761-04c1-5821-890e-6abe278e0419",
+          "a": "Jonathan Swift",
+          "c": "65",
+          "h": "<blockquote>&ldquo;To get angry is like to revenge yourself for the guilt of others.&rdquo; &mdash; <footer>Jonathan Swift</footer></blockquote>",
+          "q": "To get angry is like to revenge yourself for the guilt of others."
+        }
+      ]
+    }
+  }
+]

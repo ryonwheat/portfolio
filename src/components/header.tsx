@@ -133,11 +133,17 @@ class Header extends Component<
             : ({ theme }) => theme.darkMode.link.color};
         margin: 0;
         padding: 24px 0 20px 20px;
-      }
+        transition: all 2.5s;
+    }
+
+      .toggle-icon:hover {
+        transition: all 2.5s;
+    }
 
       .flex-center {
         display: flex;
         align-items: center;
+        justify-content: center;
         margin: 0 auto;
       }
 
@@ -158,7 +164,7 @@ class Header extends Component<
             </div>
           </div>
           <div className="col8 flex-item">
-            <NavLinks menuLinks={this.props.menuLinks} />
+            <NavLinks menuLinks={this.props.menuLinks} isDark={this.props.isDark}/>
           </div>
           <div className="toggle-icon col2 flex-item">
             <ThemeToggle />

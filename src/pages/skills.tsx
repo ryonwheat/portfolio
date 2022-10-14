@@ -3,7 +3,6 @@ import { graphql } from "gatsby"
 // import { Helmet } from "react-helmet";
 // import { withPrefix } from "gatsby";
 import Layout from "../components/layout"
-import PageTitle from "../components/pageTitle"
 import styled from "styled-components"
 import ThemeContext from "../components/themeContext"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -17,14 +16,14 @@ const StyledSkills = styled.div<{ isDark: boolean }>`
     flex-direction: row;
     flex-wrap: wrap;
     // align-items: center;
-    justify-content: flex-start; //space-around;
+    justify-content: center; //space-around;
   }
 
   .icon-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #0d356d; /* #282c34; #112040, #1b3c69; */
+    background-color: #0ea5e9; /* #0d356d; #282c34; #112040, #1b3c69; */
     border-radius: 6px;
     box-shadow: 0 10px 30px -15px #020c1bb3;
     color: ${(props) =>
@@ -46,7 +45,8 @@ const StyledSkills = styled.div<{ isDark: boolean }>`
     // background: radial-gradient(#ffffff, #ffffff 70%);
     background: linear-gradient(
       135deg,
-      rgba(255, 0, 0, 0.9) 0%,
+      #d1036f 70%,
+      //rgba(255, 0, 0, 0.9) 0%,
       transparent 100%
     );
     // background-image: -webkit-linear-gradient(
@@ -89,7 +89,7 @@ const StyledSkills = styled.div<{ isDark: boolean }>`
   }
 
   .dark .text {
-    color: #fff;
+    color: pink;
   }
 
   .ticker {
@@ -201,8 +201,8 @@ const SkillsPage = (props: Props) => {
           <Layout location={props.location}>
             <SEO title="Skills" />
             <div>
-              <h1>
-                <PageTitle title="Skills" />
+              <h1 className="center upper">Skills
+                {/* <PageTitle title="Skills" /> */}
               </h1>
 
               <div className="ticker">

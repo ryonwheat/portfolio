@@ -29,32 +29,32 @@ class ThemeProvider extends Component<{}, { dark: boolean }> {
     this.setState({ dark })
 
     // TODO: this belongs in the consumer, not the context!
-    let x = document.getElementsByClassName("skill-icon")
-    for (let i = 0; i < x.length; i++) {
-      if (dark) {
-        x[i].classList.remove("skill-icon-dark")
-      } else {
-        x[i].classList.add("skill-icon-dark")
-      }
-    }
+    // let x = document.getElementsByClassName("skill-icon")
+    // for (let i = 0; i < x.length; i++) {
+    //   if (dark) {
+    //     x[i].classList.remove("skill-icon-dark")
+    //   } else {
+    //     x[i].classList.add("skill-icon-dark")
+    //   }
+    // }
 
-    x = document.getElementsByClassName("skill")
-    for (let i = 0; i < x.length; i++) {
-      if (dark) {
-        x[i].classList.remove("skill-light")
-      } else {
-        x[i].classList.add("skill-light")
-      }
-    }
+    // x = document.getElementsByClassName("skill")
+    // for (let i = 0; i < x.length; i++) {
+    //   if (dark) {
+    //     x[i].classList.remove("skill-light")
+    //   } else {
+    //     x[i].classList.add("skill-light")
+    //   }
+    // }
 
-    x = document.getElementsByClassName("point")
-    for (let i = 0; i < x.length; i++) {
-      if (dark) {
-        x[i].classList.remove("point-light")
-      } else {
-        x[i].classList.add("point-light")
-      }
-    }
+    // x = document.getElementsByClassName("point")
+    // for (let i = 0; i < x.length; i++) {
+    //   if (dark) {
+    //     x[i].classList.remove("point-light")
+    //   } else {
+    //     x[i].classList.add("point-light")
+    //   }
+    // }
   }
 
   componentDidMount() {

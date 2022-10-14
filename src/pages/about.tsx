@@ -5,19 +5,19 @@ import SEO from "../components/seo"
 import PageTitle from "../components/pageTitle"
 import styled from "styled-components"
 
-class AboutPage extends Component<{location: string}, {}> {
-  constructor(props: any) {
-    super(props)
-    console.log("AboutPage.props: ", props)
-  }
+// class AboutPage extends Component<{location: string}, {}> {
+//   constructor(props: any) {
+//     super(props)
+//     console.log("AboutPage.props: ", props)
+//   }
 
-  componentDidMount() {}
+//   componentDidMount() {}
 
-  callback(data: any) {
-    console.log("About.callback: ", data)
-  }
+//   callback(data: any) {
+//     console.log("About.callback: ", data)
+//   }
 
-  render() {
+const AboutPage = (props: any) => {
     const StyledAbout = styled.div`
       position: relative;
       top: 0;
@@ -29,11 +29,11 @@ class AboutPage extends Component<{location: string}, {}> {
     `
     return (
       <StyledAbout>
-        <Layout location={this.props.location} parentCallback={this.callback}>
+        <Layout location={props.location}>
           <SEO title="About" />
           <div>
-            <h1>
-              <PageTitle title="About" />
+            <h1 className="center upper">About
+              {/* <PageTitle title="About" className="" /> */}
             </h1>
             <div className="page-description">
               {/* <p>GATSBY_API_URL: {process.env.GATSBY_API_URL}
@@ -48,7 +48,6 @@ class AboutPage extends Component<{location: string}, {}> {
         </Layout>
       </StyledAbout>
     )
-  }
 }
 
 export default AboutPage

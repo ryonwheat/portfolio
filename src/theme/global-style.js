@@ -1,5 +1,5 @@
-import { createGlobalStyle } from "styled-components";
-import reset from "styled-reset";
+import { createGlobalStyle } from "styled-components"
+import reset from "styled-reset"
 
 const constants = {
   dark: {
@@ -9,12 +9,12 @@ const constants = {
     linkHoverColor: "#ffffc1",
   },
   light: {
-    backgroundColor: "#f9f9f9", // #f2f2f2",
+    backgroundColor: "#f8f8f9", // #f2f2f2",
     color: "",
     linkColor: "#0ea5e9", //"#157bd1",
     linkHoverColor: "green", //"#0e75c9", //"#63ffda",
   },
-};
+}
 
 export const theme = {
   font: {
@@ -60,6 +60,7 @@ export const theme = {
       900: "#999999",
     },
     red: "#ff0000",
+    limegreen: "#D0FF94",
   },
   // link: {
   //     color: '#459bf1',
@@ -97,10 +98,10 @@ export const theme = {
       color: constants.light.linkHoverColor,
       textDecoration: "underline",
     },
-    headerBackgroundColor: "rgba(11, 44, 89, 1)",
+    headerBackgroundColor: constants.light.backgroundColor, //"rgba(11, 44, 89, 1)",
     pageTitle: constants.light.linkColor, //"#459bf1",
   },
-};
+}
 
 export const GlobalStyle = createGlobalStyle`
 
@@ -135,6 +136,7 @@ export const GlobalStyle = createGlobalStyle`
         margin: 0;
         padding: 0;
         // height: 100vh;
+        overflow-x: hidden;
     }
 
     body::-webkit-scrollbar {
@@ -202,6 +204,42 @@ export const GlobalStyle = createGlobalStyle`
         padding: 0;
     }
 
+    // .canvas .container {
+    //     position: absolute;
+    //     animation: stars linear infinite;
+    //     z-index: 1;
+    //     opacity: .5;
+    // }
+
+    // .canvas .container .star {
+    //     border-radius: 100%;
+    // }
+
+    // .canvas .container:nth-child(n) {
+    //     width: 3px;
+    //     height: 3px;
+    //     left: 30vw;
+    //     animation-delay: -993.8s;
+    //     animation-duration: 10s;
+    // }
+
+    // .canvas .container:nth-child(n) .star {
+    //     width: inherit;
+    //     height: inherit;
+    //     background: #efefef;
+    //     // animation-delay: 93.8s;
+    //     // animation-duration: 15s;
+    // }
+
+    // @keyframes stars {
+    //     0% {
+    //         transform: translateY(110vh) translateZ(0);
+    //     }
+    //     100% {
+    //         transform: translateY(-10vh) translateZ(0) scale(2);
+    //     }
+    // }
+
     .dark {
         background-color: ${({ theme }) => theme.darkMode.backgroundColor};
         color: ${({ theme }) => theme.darkMode.primaryColor};
@@ -222,50 +260,97 @@ export const GlobalStyle = createGlobalStyle`
       }
     
     .gradient-button {
-        background: linear-gradient(to right, #516af3, #38bdf8);
+        background-color: #0ea5e9;
+        // background: linear-gradient(to right, #516af3, #38bdf8);
         border-radius: 8px;
         color: #fff;
-        font-size: 1.5rem;
-        font-weight: 700;
-        padding: 14px;
+        font-size: 1rem;
+        font-weight: 500;
+        padding: 14px 28px;
+        transition: all 0.4s;
     }
 
     .gradient-button:hover {
-        background: linear-gradient(to left, #516af3, #e050a0);
+        background-color: #e050a0;
+        // background: linear-gradient(to left, #516af3, #e050a0);
+        transition: all 0.4s;
     }
 
     input, textarea {
       outline: none;
+      border-image-source: linear-gradient(rgba(0, 51, 102, 0.5), rgba(0, 0, 51, 0.5));
+      border-width: 5pt;
+      border-image-slice: 1;
     }
 
     .form-group {
-        margin-bottom: 2rem;
+        margin-bottom: 2.2rem;
+    }
+
+    .form-label {
+        color: #cecece;
+    }
+
+    .light .form-label {
+        color: #27272a;
     }
 
     .form-input {
-        background: #0d356d;
-        border: none;
-        border-bottom: 1px solid #13aff0;
-        border-radius: 0;
-        color: #ffffff;
+        // border-image-source: linear-gradient(to right, red, yellow) 1;
+        border-radius: 2px;
+        // border-width: 2px;
+        background-color: rgba(23,27,30,0.5);
+        // background: #15417e;
+        border: 2px solid #4d5261;
+        // border-bottom: 1px solid #13aff0;
+        color: #cecece;
+        padding: 10px 6px;
+    }
+
+    .form-input:focus {
+        border-color: #0ea5e9; // #47F4CF;
+        background-color: #0ea5e92e; // rgba(71,244,207,0.18);
+        color: #ffffff; // #0ea5e9;
+    }
+
+    .light .form-input {
+        background: #fff;
+        color: #414144;
     }
 
     .form-control {
         display: block;
         width: 100%;
-        height: calc(1.5rem + 0.75rem + 2px);
-        padding: 0.375rem 0.75rem;
-        font-size: 1rem;
-        font-weight: 400;
+        // height: calc(1.5rem + 0.75rem + 2px);
+        // padding: 0.75rem 0.75rem;
+        font-size: .85rem;
+        font-weight: 300;
         line-height: 1.5;
     }
 
     textarea.form-control {
-      height: auto;
+        font-family: inherit;
+        height: 8rem;
+    }
+
+    .error-text {
+        // height: 20px;
+    }
+
+    .line {
+        height: 2px;
+    }
+
+    .line:hover {
+        border-top: 1px solid #0ea5e9;
     }
 
     .center {
         text-align: center;
+    }
+
+    .upper {
+        text-transform: uppercase;
     }
 
     .row {
@@ -350,57 +435,14 @@ export const GlobalStyle = createGlobalStyle`
     }
 
 
-    // .angular {
-    //   color: #c3032f;
-    // }
-    
-    // .aws {
-    //   color: #ec912d;
-    // }
-    
-    // .html5 {
-    //   color: rgb(228 78 38);
-    // }
-    
-    // .css3 {
-    //   color: rgb(0 112 185);
-    // }
-    
-    // .sass {
-    //   color: #da8eb6;
-    // }
-    
-    // .fedora {
-    //   color: #52a2da;
-    // }
-    
-    // .js {
-    //   color: rgb(99 168 19);
-    // }
-    
-    // .node-js {
-    //   color: #43853d;
-    // }
-    
-    // .php {
-    //   color: #8892bf;
-    // }
-    
-    // .react {
-    //   color: #61dafb;
-    // }
-    
-    // .suse {
-    //   color: #70b425;
-    // }
-    
-    // .ubuntu {
-    //   color: #d8391f;
-    // }
-    
-    // .centos {
-    //   color: #a14f8c;
-    // }
-    
-      
-`;
+    // Animations
+    @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+    }
+  
+`

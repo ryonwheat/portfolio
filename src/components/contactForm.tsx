@@ -16,7 +16,7 @@ class ContactForm extends Component<{}, {}> {
         howDidYouFindMe: "",
         message: "",
       },
-      fieldErrors: { firstName: "", companyName: "", email: "" },
+      fieldErrors: { firstName: "", lastName: "", email: "" },
       validForm: false,
       response: null,
     }
@@ -105,10 +105,10 @@ class ContactForm extends Component<{}, {}> {
           isValid = false
         }
         break
-      case "companyName":
-        fieldErrors.companyName =
-          value.trim().length === 0 ? "Please enter your company." : ""
-        if (fieldErrors.companyName.length > 0) {
+      case "lastName":
+        fieldErrors.lastName =
+          value.trim().length === 0 ? "Please enter your last name." : ""
+        if (fieldErrors.lastName.length > 0) {
           isValid = false
         }
         break
@@ -158,7 +158,7 @@ class ContactForm extends Component<{}, {}> {
   render() {
     return (
       <div className="row justify-content-center">
-        <div className="col8">
+        <div className="col10">
           <form onSubmit={this.handleSubmit}>
             <div className="row">
               <div className="col form-group">
@@ -167,28 +167,31 @@ class ContactForm extends Component<{}, {}> {
                   type="text"
                   id="firstName"
                   name="firstName"
+                  placeholder="First Name"
                   value={this.state.fieldValues.firstName}
                   onChange={this.handleChange}
                 />
-                <label className="form-label" htmlFor="firstName">
+                {/* <label className="form-label" htmlFor="firstName">
                   First Name
-                </label>
-                <div className="error-text">
+                </label> */}
+                {/* <div className="error-text">
                   {this.state.fieldErrors.firstName}
-                </div>
+                </div> */}
               </div>
               <div className="col form-group">
                 <input
                   className="form-input form-control"
                   type="text"
-                  id="companyName"
-                  name="companyName"
-                  value={this.state.fieldValues.companyName}
+                  id="lastName"
+                  name="lastName"
+                  placeholder="Last Name"
+                  value={this.state.fieldValues.lastName}
                   onChange={this.handleChange}
                 />
-                <label className="form-label" htmlFor="companyName">
-                  Company Name
+                {/* <label className="form-label" htmlFor="lastName">
+                  Last Name
                 </label>
+                <div className="error-text">{this.state.fieldErrors.lastName}</div> */}
               </div>
             </div>
             <div class="row">
@@ -198,15 +201,16 @@ class ContactForm extends Component<{}, {}> {
                   type="text"
                   id="email"
                   name="email"
+                  placeholder="Email"
                   value={this.state.fieldValues.email}
                   onChange={this.handleChange}
                 />
-                <label className="form-label" htmlFor="email">
+                {/* <label className="form-label" htmlFor="email">
                   Email
                 </label>
-                <div className="error-text">{this.state.fieldErrors.email}</div>
+                <div className="error-text">{this.state.fieldErrors.email}</div> */}
               </div>
-              <div className="col form-group">
+              {/* <div className="col form-group">
                 <input
                   className="form-input form-control"
                   type="text"
@@ -218,19 +222,20 @@ class ContactForm extends Component<{}, {}> {
                 <label className="form-label" htmlFor="howDidYouFindMe">
                   How did you find me?
                 </label>
-              </div>
+              </div> */}
             </div>
             <div className="col form-group">
               <textarea
                 className="form-input form-control"
                 id="message"
                 name="message"
+                placeholder="Your message"
                 value={this.state.fieldValues.message}
                 onChange={this.handleChange}
               />
-              <label className="form-label" htmlFor="message">
+              {/* <label className="form-label" htmlFor="message">
                 Message
-              </label>
+              </label> */}
             </div>
             <div className="center">
               <button

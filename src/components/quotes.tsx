@@ -2,35 +2,41 @@ import React, { useEffect, useState } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
 
+interface Props {
+  data: any
+}
+
 interface Quote {
-  id: string,
-  a: string,
-  c: string,
-  h: string,
+  id: string
+  a: string
+  c: string
+  h: string
   q: string
 }
 
 const Quotes = (props: any) => {
-  const data = useStaticQuery(graphql`
-    query HeadingQuery {
-      allQuote {
-        nodes {
-          id
-          a
-          c
-          h
-          q
+//   const data = props.data
+    const data = useStaticQuery(graphql`
+      query HeadingQuery {
+        allQuote {
+          nodes {
+            id
+            a
+            c
+            h
+            q
+          }
         }
       }
-    }
-  `)
-  // console.log("Quotes data: ", data)
+    `)
+  console.log("Quotes data: ", data)
 
   const randomItem = (items: Quote[]) => {
     return items[Math.floor(Math.random() * items.length)]
   }
 
   const [quote, setQuote] = useState(randomItem(data.allQuote.nodes))
+  console.log("quotes: ", JSON.stringify(quote))
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -40,7 +46,8 @@ const Quotes = (props: any) => {
   })
 
   const StyledQuote = styled.div`
-    background-color: #ffffb1; // #ccc;
+    background-color: #b1d3ff; // #ffffb1; // #ccc;
+    border: 0px solid #fff;
     border-radius: 8px;
     padding: 20px;
     color: #333;
@@ -52,49 +59,22 @@ const Quotes = (props: any) => {
     .author {
       margin: 4px 0 4px 20px;
     }
-
-    @keyframes fadeIn {
-      0% {
-        opacity: 0;
-      }
-      100% {
-        opacity: 1;
-      }
-    }
   `
 
   return (
-    // <StaticQuery
-    //     query={graphql`
-    //       query HeadingQuery {
-    //         allQuote {
-    //           nodes {
-    //             id
-    //             a
-    //             c
-    //             h
-    //             q
-    //           }
-    //         }
-    //       }
-    //     `}
-    //     render={data => (
     <StyledQuote>
       <div>
         <div>
           <i>"{quote.q}"</i>
         </div>
         <div className="author">- {quote.a}</div>
-        {/* <i>{data.allQuote.nodes[0].q}</i> - {data.allQuote.nodes[0].a} */}
       </div>
     </StyledQuote>
-    // )}
-    // />
   )
 }
 
 // export const query = graphql`
-//   {
+//   query HeadingQuery {
 //     allQuote {
 //       nodes {
 //         id
@@ -106,4 +86,5 @@ const Quotes = (props: any) => {
 //     }
 //   }
 // `
+
 export default Quotes

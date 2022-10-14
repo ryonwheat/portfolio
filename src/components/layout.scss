@@ -1,0 +1,71 @@
+@use 'sass:math';
+
+// .canvas 
+//   .container 
+//     position: absolute
+//     animation: stars linear infinite
+//     .star 
+//       border-radius: 100%
+//   @for $i from 1 through 100 
+//     .container:nth-child(#{$i}) 
+//       $width: random(3) + px
+//       width: $width
+//       height: $width
+//       left: (random(200) + vw / 2vw)
+//       animation-delay: (random(100) + s / 5s / 1000s)
+//       animation-duration: (random(2000) + s / 5s)
+//       .star 
+//         border: 1px solid red
+//         width: inherit
+//         height: inherit
+//         animation-delay: (random(100) + s / 10s - 50s)
+//         animation-duration: (random(500) + s / 10s)
+//         background: rgba(random(255), random(255), random(255), calc((random(10) / 10)))
+
+.canvas {
+    position: absolute;
+    animation: stars linear infinite;
+    z-index: 0;
+    // opacity: .7;
+    // height: 100%;
+}
+
+.star {
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 100%;
+    transform-origin: 200px 500px;
+    // transform: rotateY(90deg);
+    // animation: stars linear infinite;
+}
+
+@for $i from 1 through 400 {
+    .star:nth-of-type(#{$i}) {
+        $width: math.random(3) + px;
+
+        // top: 100%;
+        // top: math.random(100) + "%";
+
+        // top: random(100) - 50 + vh;
+        left: math.random(200) + vw;
+        width: $width;
+        height: $width;
+        opacity: calc(math.random(50) / 100) + 0.5;
+        // animation-delay: (random(100) + s);
+        // animation-duration: (random(200) + s);
+        animation-delay: -10s;
+        animation-duration: 10s;
+    }
+}
+
+@keyframes stars {
+    0% {
+        transform: rotateX(0deg) rotateY(0deg);
+        // transform: translateY(30%) translateZ(0);
+    }
+
+    100% {
+        transform: rotateX(90deg) rotateY(180deg);
+        // transform: translateY(50%) translateZ(0);
+    }
+}

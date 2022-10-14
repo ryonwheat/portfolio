@@ -39,6 +39,11 @@ module.exports = {
       render: true,
     },
     {
+      name: "blog",
+      link: "/blog",
+      render: true,
+    },
+    {
       name: "portfolio",
       link: "/portfolio",
       render: false,
@@ -53,7 +58,6 @@ module.exports = {
     {
       name: "Github",
       url: "https://github.com/ryonwheat",
-      // icon: '<FiGithub />',
       icon: {
         prefix: "fi",
         name: "FiGithub",
@@ -70,7 +74,6 @@ module.exports = {
         color: "",
         size: iconSize["1rem"],
       },
-      // icon: '<FiLinkedin />'
     },
     {
       name: "Codepen",
@@ -81,7 +84,6 @@ module.exports = {
         color: "",
         size: iconSize["1rem"],
       },
-      // icon: '<FiCodepen />'
     },
     {
       name: "Instagram",
@@ -92,7 +94,6 @@ module.exports = {
         color: "",
         size: iconSize["1rem"],
       },
-      // icon: '<FiInstagram />'
     },
     {
       name: "Facebook",
@@ -103,52 +104,58 @@ module.exports = {
         color: "",
         size: iconSize["1rem"],
       },
-      // icon: '<FiFacebook />'
     },
   ],
-  // socialLinks: {
-  //     twitter: ``,
-  // },
   siteContact: {
     email: "hello@ryonwheat.com",
     phone: "720.777.7777",
   },
-  githubApiQuery: `query ($number_of_repos: Int!) {
-        viewer {
-          name
-          avatarUrl
-          isHireable
-          resourcePath
-          repositories(last: $number_of_repos, privacy: PUBLIC, orderBy: { field: STARGAZERS, direction:ASC } ) {
-            nodes {
-              name
-              description
-              homepageUrl
-              forkCount
-              createdAt
-              updatedAt
-              resourcePath
-              languages(last: 1, orderBy: { field: SIZE, direction:ASC } ) {
-                edges {
-                  node {
-                    name
-                    color
-                  }
-                }
-              }
-              licenseInfo {
-                name
-              }
-              stargazers {
-                totalCount
-              }
-            }
-          }
-        }
-    }`,
+  //   githubApiQuery: `query ($number_of_repos: Int!) {
+  //         viewer {
+  //           name
+  //           avatarUrl
+  //           isHireable
+  //           resourcePath
+  //           repositories(last: $number_of_repos, privacy: PUBLIC, orderBy: { field: STARGAZERS, direction:ASC } ) {
+  //             nodes {
+  //               name
+  //               description
+  //               homepageUrl
+  //               forkCount
+  //               createdAt
+  //               updatedAt
+  //               resourcePath
+  //               languages(last: 1, orderBy: { field: SIZE, direction:ASC } ) {
+  //                 edges {
+  //                   node {
+  //                     name
+  //                     color
+  //                   }
+  //                 }
+  //               }
+  //               licenseInfo {
+  //                 name
+  //               }
+  //               stargazers {
+  //                 totalCount
+  //               }
+  //             }
+  //           }
+  //         }
+  //     }`,
   githubApiVariables: {
-    number_of_repos: 12,
+    number_of_repos: 20,
+    //   github_login: process.env.GITHUB_LOGIN,
+    //   q: "author:ryonwheat state:closed type:pr sort:comments",
+    //   author: "ryonwheat"
   },
+  taglines: [
+    "Husband",
+    "Daddy",
+    "Superhero (according to my kids)",
+    "Real estate investor",
+    "Full stack web developer",
+  ],
   skills: [
     {
       name: "HTML5",
@@ -156,57 +163,57 @@ module.exports = {
       type: "frontend",
       url: "https://www.w3.org/TR/2011/WD-html5-20110405/",
       icon: {
-        prefix: "fab",
-        name: "html5",
+        prefix: "si",
+        name: "SiHtml5",
         color: "rgb(228 78 38)",
-        size: iconSize.x4,
-        type: iconType.fontAwesome,
+        size: iconSize["3rem"],
+        type: iconType.reactIcons,
       },
     },
     {
       name: "CSS3",
       rating: 5,
       type: "frontend",
-      url: "",
+      url: "https://www.w3.org/TR/2001/WD-css3-roadmap-20010523/",
       icon: {
-        prefix: "fab",
-        name: "css3",
+        prefix: "si",
+        name: "SiCss3",
         color: "rgb(0 112 185)",
-        size: iconSize.x4,
-        type: iconType.fontAwesome,
+        size: iconSize["3rem"],
+        type: iconType.reactIcons,
       },
     },
     {
       name: "Sass",
       rating: 3,
       type: "frontend",
-      url: "",
+      url: "https://sass-lang.com/",
       icon: {
-        prefix: "fab",
-        name: "sass",
+        prefix: "si",
+        name: "SiSass",
         color: "#da8eb6",
-        size: iconSize.x4,
-        type: iconType.fontAwesome,
+        size: iconSize["3rem"],
+        type: iconType.reactIcons,
       },
     },
     {
       name: "JS",
       rating: 5,
       type: "frontend",
-      url: "",
+      url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
       icon: {
-        prefix: "fab",
-        name: "js",
+        prefix: "si",
+        name: "SiJavascript",
         color: "rgb(99 168 19)",
-        size: iconSize.x4,
-        type: iconType.fontAwesome,
+        size: iconSize["3rem"],
+        type: iconType.reactIcons,
       },
     },
     {
       name: "Bootstrap",
       rating: 4,
       type: "frontend",
-      url: "",
+      url: "https://getbootstrap.com/",
       icon: {
         prefix: "si",
         name: "SiBootstrap",
@@ -219,20 +226,20 @@ module.exports = {
       name: "React",
       rating: 3,
       type: "frontend",
-      url: "",
+      url: "https://reactjs.org/",
       icon: {
-        prefix: "fab",
-        name: "react",
+        prefix: "si",
+        name: "SiReact",
         color: "#61dafb",
-        size: iconSize.x4,
-        type: iconType.fontAwesome,
+        size: iconSize["3rem"],
+        type: iconType.reactIcons,
       },
     },
     {
       name: "Gatsby",
       rating: 3,
       type: "frontend",
-      url: "",
+      url: "https://www.gatsbyjs.com/",
       icon: {
         prefix: "si",
         name: "SiGatsby",
@@ -245,7 +252,7 @@ module.exports = {
       name: "Typescript",
       rating: 3,
       type: "frontend",
-      url: "",
+      url: "https://www.typescriptlang.org/",
       icon: {
         prefix: "si",
         name: "SiTypescript",
@@ -258,7 +265,7 @@ module.exports = {
       name: "Redux",
       rating: 3,
       type: "frontend",
-      url: "",
+      url: "https://redux.js.org/",
       icon: {
         prefix: "si",
         name: "SiRedux",
@@ -268,101 +275,114 @@ module.exports = {
       },
     },
     {
-        name: "Json",
-        rating: 5,
-        type: "",
-        url: "",
-        icon: {
-          prefix: "si",
-          name: "SiJson",
-          color: "#ffffff",
-          size: iconSize["3rem"],
-          type: iconType.reactIcons,
-        },
+      name: "Json",
+      rating: 5,
+      type: "",
+      url: "https://www.json.org/json-en.html",
+      icon: {
+        prefix: "si",
+        name: "SiJson",
+        color: "#ffffff",
+        size: iconSize["3rem"],
+        type: iconType.reactIcons,
       },
-      {
+    },
+    {
       name: "Angular",
       rating: 5,
       type: "frontend",
-      url: "",
+      url: "https://angular.io/",
       icon: {
-        prefix: "fab",
-        name: "angular",
+        prefix: "si",
+        name: "SiAngular",
         color: "#c3032f",
-        size: iconSize.x4,
-        type: iconType.fontAwesome,
+        size: iconSize["3rem"],
+        type: iconType.reactIcons,
       },
     },
     {
       name: "Express",
       rating: 5,
       type: "backend",
-      url: "",
+      url: "https://expressjs.com/",
       icon: {
         prefix: "si",
         name: "SiExpress",
         color: "#ffffff",
         size: iconSize["3rem"],
-        type: "",
+        type: iconType.reactIcons,
       },
     },
     {
       name: "NodeJs",
       rating: 5,
       type: "backend",
-      url: "",
+      url: "https://nodejs.org/en/",
       icon: {
-        prefix: "fab",
-        name: "node-js",
+        prefix: "si",
+        name: "SiNodedotjs",
         color: "#43853d",
-        size: iconSize.x4,
-        type: iconType.fontAwesome,
+        size: iconSize["3rem"],
+        type: iconType.reactIcons,
       },
     },
     {
       name: "Java",
       rating: 5,
       type: "backend",
-      url: "",
+      url: "https://www.java.com/en/",
       icon: {
-        prefix: "fab",
-        name: "java",
+        prefix: "si",
+        name: "SiJava",
         color: "",
-        size: iconSize.x4,
-        type: iconType.fontAwesome,
+        size: iconSize["3rem"],
+        type: iconType.reactIcons,
       },
     },
     {
       name: "php",
       rating: 5,
       type: "backend",
-      url: "",
+      url: "https://www.php.net/",
       icon: {
-        prefix: "fab",
-        name: "php",
+        prefix: "si",
+        name: "SiPhp",
         color: "#8892bf",
-        size: iconSize.x3,
-        type: iconType.fontAwesome,
+        size: iconSize["3rem"],
+        type: iconType.reactIcons,
+      },
+    },
+    {
+      name: "Python",
+      rating: 5,
+      type: "backend",
+      url: "https://www.python.org/",
+      icon: {
+        prefix: "si",
+        name: "SiPython",
+        color: "",
+        size: iconSize["3rem"],
+        type: iconType.reactIcons,
       },
     },
     {
       name: "AWS",
       rating: 5,
       type: "devops",
-      url: "",
+      url: "https://aws.amazon.com/",
       icon: {
-        prefix: "fab",
-        name: "aws",
+        prefix: "si",
+        name: "SiAmazonaws",
         color: "#ec912d",
-        size: iconSize.x3,
-        type: iconType.fontAwesome,
+        size: iconSize["3rem"],
+        type: iconType.reactIcons,
       },
     },
     {
       name: "Google Cloud",
       rating: 5,
       type: "devops",
-      url: "",
+      url: "https://cloud.google.com/",
       icon: {
         prefix: "si",
         name: "SiGooglecloud",
@@ -375,46 +395,72 @@ module.exports = {
       name: "Github",
       rating: 5,
       type: "devops",
-      url: "",
+      url: "https://github.com/",
       icon: {
-        prefix: "fab",
-        name: "github",
+        prefix: "si",
+        name: "SiGithub",
         color: "",
-        size: iconSize.x4,
-        type: iconType.fontAwesome,
+        size: iconSize["3rem"],
+        type: iconType.reactIcons,
       },
     },
     {
       name: "Gitlab",
       rating: 5,
       type: "devops",
-      url: "",
+      url: "https://about.gitlab.com/",
       icon: {
-        prefix: "fab",
-        name: "gitlab",
+        prefix: "si",
+        name: "SiGitlab",
         color: "",
-        size: iconSize.x4,
-        type: iconType.fontAwesome,
+        size: iconSize["3rem"],
+        type: iconType.reactIcons,
       },
     },
     {
       name: "Codepen",
       rating: 5,
       type: "devops",
-      url: "",
+      url: "https://codepen.io/",
       icon: {
-        prefix: "fab",
-        name: "codepen",
+        prefix: "si",
+        name: "SiCodepen",
         color: "",
-        size: iconSize.x4,
-        type: iconType.fontAwesome,
+        size: iconSize["3rem"],
+        type: iconType.reactIcons,
+      },
+    },
+    {
+      name: "Netlify",
+      rating: 5,
+      type: "devops",
+      url: "https://www.netlify.com/",
+      icon: {
+        prefix: "si",
+        name: "SiNetlify",
+        color: "",
+        size: iconSize["3rem"],
+        type: iconType.reactIcons,
+      },
+    },
+    {
+      name: "npm",
+      rating: 5,
+      type: "devops",
+      url: "https://www.npmjs.com/",
+      icon: {
+        prefix: "si",
+        name: "SiNpm",
+        color: "",
+        size: iconSize["3rem"],
+        type: iconType.reactIcons,
       },
     },
     {
       name: "Spring",
       rating: 2,
       type: "framework",
-      url: "",
+      url: "https://spring.io/",
       icon: {
         prefix: "si",
         name: "SiSpring",
@@ -427,7 +473,7 @@ module.exports = {
       name: "Springboot",
       rating: 2,
       type: "framework",
-      url: "",
+      url: "https://spring.io/projects/spring-boot/",
       icon: {
         prefix: "si",
         name: "SiSpringboot",
@@ -441,7 +487,7 @@ module.exports = {
       name: "Visual Studio",
       rating: 2,
       type: "framework",
-      url: "",
+      url: "https://visualstudio.microsoft.com/",
       icon: {
         prefix: "si",
         name: "SiVisualstudio",
@@ -466,7 +512,8 @@ module.exports = {
     {
       name: "Salesforce",
       rating: 5,
-      url: "cms",
+      type: "cms",
+      url: "https://www.salesforce.com/",
       icon: {
         prefix: "si",
         name: "SiSalesforce",
@@ -478,7 +525,8 @@ module.exports = {
     {
       name: "Wordpress",
       rating: 3,
-      url: "cms",
+      type: "cms",
+      url: "https://wordpress.org/",
       icon: {
         prefix: "si",
         name: "SiWordpress",
@@ -491,71 +539,72 @@ module.exports = {
       name: "Linux",
       rating: 5,
       type: "OS",
-      url: "",
+      url: "https://www.linux.org/",
       icon: {
-        prefix: "fab",
-        name: "linux",
+        prefix: "si",
+        name: "SiLinux",
         color: "",
-        size: iconSize.x4,
+        size: iconSize["3rem"],
+        type: iconType.reactIcons,
       },
     },
     {
       name: "Ubuntu",
       rating: 5,
       type: "OS",
-      url: "",
+      url: "https://ubuntu.com/",
       icon: {
-        prefix: "fab",
-        name: "ubuntu",
+        prefix: "si",
+        name: "SiUbuntu",
         color: "#d8391f",
-        size: iconSize.x4,
-        type: iconType.fontAwesome,
+        size: iconSize["3rem"],
+        type: iconType.reactIcons,
       },
     },
     {
       name: "Suse",
       rating: 5,
       type: "OS",
-      url: "",
+      url: "https://www.suse.com/",
       icon: {
-        prefix: "fab",
-        name: "suse",
+        prefix: "si",
+        name: "SiSuse",
         color: "#70b425",
-        size: iconSize.x4,
-        type: iconType.fontAwesome,
+        size: iconSize["3rem"],
+        type: iconType.reactIcons,
       },
     },
     {
       name: "Centos",
       rating: 5,
       type: "OS",
-      url: "",
+      url: "https://www.centos.org/",
       icon: {
-        prefix: "fab",
-        name: "centos",
+        prefix: "si",
+        name: "SiCentos",
         color: "#a14f8c",
-        size: iconSize.x4,
-        type: iconType.fontAwesome,
+        size: iconSize["3rem"],
+        type: iconType.reactIcons,
       },
     },
     {
       name: "Fedora",
       rating: 5,
       type: "OS",
-      url: "",
+      url: "https://getfedora.org/",
       icon: {
-        prefix: "fab",
-        name: "fedora",
+        prefix: "si",
+        name: "SiFedora",
         color: "#52a2da",
-        size: iconSize.x4,
-        type: iconType.fontAwesome,
+        size: iconSize["3rem"],
+        type: iconType.reactIcons,
       },
     },
     {
       name: "Mac",
       rating: 5,
       type: "OS",
-      url: "",
+      url: "https://www.apple.com/macos/",
       icon: {
         prefix: "si",
         name: "SiMacos",
@@ -568,7 +617,7 @@ module.exports = {
       name: "Windows",
       rating: 5,
       type: "OS",
-      url: "",
+      url: "https://www.microsoft.com/en-us/windows?r=1",
       icon: {
         prefix: "si",
         name: "SiWindows",
@@ -581,7 +630,7 @@ module.exports = {
       name: "Bash",
       rating: 3,
       type: "",
-      url: "",
+      url: "https://www.gnu.org/software/bash/",
       icon: {
         prefix: "si",
         name: "SiGnubash",
@@ -594,7 +643,7 @@ module.exports = {
       name: "Perl",
       rating: 2,
       type: "",
-      url: "",
+      url: "https://www.perl.org/",
       icon: {
         prefix: "si",
         name: "SiPerl",
@@ -607,7 +656,7 @@ module.exports = {
       name: "Openssl",
       rating: 3,
       type: "",
-      url: "",
+      url: "https://www.openssl.org/",
       icon: {
         prefix: "si",
         name: "SiOpenssl",
@@ -620,7 +669,7 @@ module.exports = {
       name: "Tomcat",
       rating: 4,
       type: "servers",
-      url: "",
+      url: "https://tomcat.apache.org/",
       icon: {
         prefix: "si",
         name: "SiApachetomcat",
@@ -633,7 +682,7 @@ module.exports = {
       name: "Apache",
       rating: 4,
       type: "servers",
-      url: "",
+      url: "https://www.apache.org/",
       icon: {
         prefix: "si",
         name: "SiApache",
@@ -646,7 +695,7 @@ module.exports = {
       name: "Mysql",
       rating: 4,
       type: "databases",
-      url: "",
+      url: "https://www.mysql.com/",
       icon: {
         prefix: "si",
         name: "SiMysql",
@@ -659,7 +708,7 @@ module.exports = {
       name: "Graphql",
       rating: 4,
       type: "databases",
-      url: "",
+      url: "https://graphql.org/",
       icon: {
         prefix: "si",
         name: "SiGraphql",
@@ -667,6 +716,153 @@ module.exports = {
         size: iconSize["3rem"],
         type: iconType.reactIcons,
       },
+    },
+    {
+      name: "Zapier",
+      rating: 4,
+      type: "api",
+      url: "https://zapier.com/",
+      icon: {
+        prefix: "si",
+        name: "SiZapier",
+        color: "",
+        size: iconSize["3rem"],
+        type: iconType.reactIcons,
+      },
+    },
+    {
+      name: "Peloton",
+      rating: 4,
+      type: "api",
+      url: "https://app.swaggerhub.com/apis/DovOps/peloton-unofficial-api/0.3.0/",
+      icon: {
+        prefix: "si",
+        name: "SiPeloton",
+        color: "",
+        size: iconSize["3rem"],
+        type: iconType.reactIcons,
+      },
+    },
+    {
+      name: "Spotify API",
+      rating: 4,
+      type: "api",
+      url: "https://developer.spotify.com/",
+      icon: {
+        prefix: "si",
+        name: "SiSpotify",
+        color: "",
+        size: iconSize["3rem"],
+        type: iconType.reactIcons,
+      },
+    },
+    {
+      name: "Twilio",
+      rating: 4,
+      type: "api",
+      url: "https://www.twilio.com/",
+      icon: {
+        prefix: "si",
+        name: "SiTwilio",
+        color: "",
+        size: iconSize["3rem"],
+        type: iconType.reactIcons,
+      },
+    },
+    {
+      name: "Twitter API",
+      rating: 4,
+      type: "api",
+      url: "https://developer.twitter.com/en/docs/twitter-api/",
+      icon: {
+        prefix: "si",
+        name: "SiTwitter",
+        color: "",
+        size: iconSize["3rem"],
+        type: iconType.reactIcons,
+      },
+    },
+    {
+      name: "Zillow",
+      rating: 4,
+      type: "api",
+      url: "https://www.zillow.com/howto/api/GetSearchResults.htm/",
+      icon: {
+        prefix: "si",
+        name: "SiZillow",
+        color: "",
+        size: iconSize["3rem"],
+        type: iconType.reactIcons,
+      },
+    },
+    {
+      name: "GoogleMaps",
+      rating: 4,
+      type: "api",
+      url: "https://developers.google.com/maps/",
+      icon: {
+        prefix: "si",
+        name: "SiGooglemaps",
+        color: "",
+        size: iconSize["3rem"],
+        type: iconType.reactIcons,
+      },
+    },
+    {
+      name: "Filezilla",
+      rating: 4,
+      type: "application",
+      url: "https://filezilla-project.org/",
+      icon: {
+        prefix: "si",
+        name: "SiFilezilla",
+        color: "",
+        size: iconSize["3rem"],
+        type: iconType.reactIcons,
+      },
+    },
+    {
+      name: "MS Word",
+      rating: 4,
+      type: "application",
+      url: "",
+      icon: {
+        prefix: "si",
+        name: "SiMicrosoftword",
+        color: "",
+        size: iconSize["3rem"],
+        type: iconType.reactIcons,
+      },
+    },
+    {
+      name: "MS Excel",
+      rating: 4,
+      type: "application",
+      url: "",
+      icon: {
+        prefix: "si",
+        name: "SiMicrosoftexcel",
+        color: "",
+        size: iconSize["3rem"],
+        type: iconType.reactIcons,
+      },
+    },
+  ],
+  gsap: [
+    {
+      name: "rotatingBox",
+      title: "Animation Sequence",
+      render: true,
+    },
+    {
+      name: "orbit",
+      title: "Electrons",
+      render: true,
+    },
+    {
+      name: "orbit2",
+      title: "Planets",
+      render: true,
     },
   ],
   books: [],

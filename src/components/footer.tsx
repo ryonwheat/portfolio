@@ -24,13 +24,13 @@ interface SiteContact {
 }
 
 const Footer = ({ socialMedia, siteContact }: Props) => {
-  console.log("Footer props: ", socialMedia, siteContact)
+//   console.log("Footer props: ", socialMedia, siteContact)
 
   fetch("https://api.github.com/repos/ryonwheat/gatsby-sandbox")
     .then((response) => response.json())
     .then((json) => {
       const { stargazers_count, forks_count } = json
-      console.log("Footer json: ", json)
+    //   console.log("Footer json: ", json)
     })
     .catch((e) => console.error(e))
 

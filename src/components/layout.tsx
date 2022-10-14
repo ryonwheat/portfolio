@@ -5,13 +5,14 @@ import ThemeContext from "./themeContext"
 import Header from "./header"
 import Footer from "./footer"
 import TransitionHandler from "./transition"
+import "./layout.scss"
 
 const StyledLayout = styled.div<{ isDark: boolean }>`
   .main-content {
     min-height: 100vh;
     margin: 0 auto 50px auto;
     max-width: 960px;
-    padding: 60px 1.0875rem 1.45rem 0;
+    padding: 80px 1.0875rem 1.45rem 0;
   }
 
   .main-page-header,
@@ -76,36 +77,39 @@ const StyledLayout = styled.div<{ isDark: boolean }>`
   }
 `
 
-class Layout extends Component<any, any> {
+class Layout extends Component<any, { animate: boolean; isClient: boolean }> {
   constructor(props: any) {
     super(props)
     console.log("Layout.props: ", props)
     this.state = {
       animate: true,
+      isClient: false,
     }
   }
 
   componentDidMount() {
-    let openingAnimation = window.sessionStorage.getItem("openingAnimationRan")
-    console.log(
-      "layout.componentDidMount.openingAnimation: " + openingAnimation
-    )
+    this.setState({ isClient: true })
 
-    if (window.sessionStorage.getItem("openingAnimationRan") === null) {
-      let body = document.body
-      body.classList.add("page-loading")
+    // let openingAnimation = window.sessionStorage.getItem("openingAnimationRan")
+    // console.log(
+    //   "layout.componentDidMount.openingAnimation: " + openingAnimation
+    // )
 
-      let el = document.getElementById("page-container")
-      el !== null ? el.classList.remove("fade-in") : null
-      // document.getElementById("page-container").classList.remove("fade-in");
+    // if (window.sessionStorage.getItem("openingAnimationRan") === null) {
+    //   let body = document.body
+    //   body.classList.add("page-loading")
 
-      setTimeout(() => {
-        body.classList.remove("page-loading")
-        el !== null ? el.classList.add("fade-in") : null
-      }, 2000)
+    //   let el = document.getElementById("page-container")
+    //   el !== null ? el.classList.remove("fade-in") : null
+    //   // document.getElementById("page-container").classList.remove("fade-in");
 
-      window.sessionStorage.setItem("openingAnimationRan", "true")
-    }
+    //   setTimeout(() => {
+    //     body.classList.remove("page-loading")
+    //     el !== null ? el.classList.add("fade-in") : null
+    //   }, 2000)
+
+    //   window.sessionStorage.setItem("openingAnimationRan", "true")
+    // }
   }
 
   // child to parent communication
@@ -114,76 +118,96 @@ class Layout extends Component<any, any> {
     this.props.parentCallback(data)
   }
 
+  // TODO: move to separate module
+  createStars() {
+    let el = []
+    for (let i = 0; i < 400; i++) {
+      el.push(<div className="star"></div>)
+    }
+    return el
+  }
+
   render() {
-    return (
-      <StaticQuery
-        query={graphql`
-          query SiteTitleQuery {
-            site {
-              siteMetadata {
-                title
-                menuLinks {
-                  name
-                  link
-                  render
-                }
-                socialMedia {
-                  name
-                  url
-                  icon {
-                    prefix
+    const { isClient } = this.state
+    let isClientString = isClient === false ? "false" : "true"
+    console.log("render state: ", this.state)
+    if (this.state.isClient === false) {
+        console.log("returning false state: ", this.state)
+        return <></>
+    } else {
+      return (
+        <StaticQuery
+          query={graphql`
+            query SiteTitleQuery {
+              site {
+                siteMetadata {
+                  title
+                  menuLinks {
                     name
-                    color
-                    size
+                    link
+                    render
                   }
-                }
-                siteContact {
-                  email
+                  taglines
+                  socialMedia {
+                    name
+                    url
+                    icon {
+                      prefix
+                      name
+                      color
+                      size
+                    }
+                  }
+                  siteContact {
+                    email
+                  }
                 }
               }
             }
-          }
-        `}
-        render={(data) => (
-          <ThemeContext.Consumer>
-            {(context) => (
-              <StyledLayout isDark={context.dark}>
-                <TransitionHandler location={this.props.location}>
-                  <div
-                    id="page-container"
-                    className={`page-container ${
-                      context.dark ? "dark" : "light"
-                    }`}
-                  >
-                    <Header
-                      siteTitle={data.site.siteMetadata.title}
-                      menuLinks={data.site.siteMetadata.menuLinks}
-                      parentCallback={this.callback}
-                      isDark={context.dark}
-                    />
+          `}
+          render={(data) => (
+            <ThemeContext.Consumer>
+              {(context) => (
+                <StyledLayout key={isClientString} isDark={context.dark}>
+                  <TransitionHandler location={this.props.location}>
+                    <div
+                      id="page-container"
+                      className={`page-container ${
+                        context.dark ? "dark" : "light"
+                      }`}
+                    >
+                      <Header
+                        siteTitle={data.site.siteMetadata.title}
+                        menuLinks={data.site.siteMetadata.menuLinks}
+                        parentCallback={this.callback}
+                        isDark={context.dark}
+                      />
 
-                    <main className="main-content">
-                      {/* <div>Layout IsDark: {context.dark === true ? "true" : "false"}</div> */}
-                      {this.props.children}
-                      {/* {this.props.children({ ...this.props, isDark: context.dark })} */}
-                    </main>
+                      <div className="canvas">{this.createStars()}</div>
 
-                    <div id="curtain" className="curtain">
-                      <div id="loading-bar" className="loading-bar"></div>
+                      <main className="main-content">
+                        {/* <div>Layout IsDark: {context.dark === true ? "true" : "false"}</div> */}
+                        {this.props.children}
+                        {/* {this.props.children({ ...this.props, isDark: context.dark })} */}
+                      </main>
+
+                      <div id="curtain" className="curtain">
+                        <div id="loading-bar" className="loading-bar"></div>
+                      </div>
+
+                      <Footer
+                        socialMedia={data.site.siteMetadata.socialMedia}
+                        siteContact={data.site.siteMetadata.siteContact}
+                      />
                     </div>
-
-                    <Footer
-                      socialMedia={data.site.siteMetadata.socialMedia}
-                      siteContact={data.site.siteMetadata.siteContact}
-                    />
-                  </div>
-                </TransitionHandler>
-              </StyledLayout>
-            )}
-          </ThemeContext.Consumer>
-        )}
-      />
-    )
+                  </TransitionHandler>
+                </StyledLayout>
+              )}
+            </ThemeContext.Consumer>
+          )}
+        />
+      )
+    }
   }
 }
 

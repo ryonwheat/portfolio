@@ -102,21 +102,25 @@ const StyledProject = styled.div<{ isDark: boolean }>`
     position: relative;
     font-size: 0.75rem;
     font-weight: 500;
-    margin: 18px 0 18px 6px;
+    margin: 18px 20px 18px 6px;
   }
 
   .technology-item {
-    background-color: #589bfd; //#459bf1; // #1e99e6; // #a0a1a2;
+    background-color: #0ea5e9; //#459bf1; // #1e99e6; // #a0a1a2;
     border: 1px solid transparent;
-    border-radius: 24px;
-    font-size: 0.8rem;
-    padding: 0 8px 8px 8px;
+    border-radius: 8px;
     line-height: 22px;
-    height: 20px;
+    // height: 20px;
+    margin: 0 10px 20px 0;
+    transition: all 0.3s;
   }
 
   .technology-item:hover {
-    background-color: #738195;
+    background-color: #e050a0; //#d1036f; // #738195;
+    // background: linear-gradient(to left, #0ea5e9, #e050a0);
+    opacity: .9;
+    transition: all 0.3s;
+    // transform: scale(1.05);
   }
 
   li {
@@ -135,10 +139,11 @@ const StyledProject = styled.div<{ isDark: boolean }>`
     // background-color: #589bfd; //#459bf1; // #1e99e6; // #a0a1a2;
     // border: 1px solid transparent;
     // border-radius: 24px;
-    // font-size: 0.8rem;
-    // padding: 0 10px;
+    font-size: 0.85rem;
+    display: inline-block;
+    padding: 3px 12px;
     // line-height: 22px;
-    transition: all 0.5s;
+    // transition: all 0.5s;
   }
 
   .tech-links:hover {
@@ -147,7 +152,11 @@ const StyledProject = styled.div<{ isDark: boolean }>`
         ? ({ theme }) => theme.darkMode.linkHover.color
         : ({ theme }) => theme.darkMode.linkHover.color};
     text-decoration: none;
-    transition: all 0.5s;
+    // transition: all 0.5s;
+  }
+
+  .m-yt {
+    margin-top: 80px;
   }
 `
 
@@ -171,34 +180,35 @@ const ProjectsPage = (props: Props) => {
     <ThemeContext.Consumer>
       {(context) => (
         <Layout location={props.location}>
-          {/* <div>Projects IsDark: {context.dark === true ? "true" : "false"}</div> */}
-          <div>
-            <SEO title="Projects" />
-            <h1>
-              <PageTitle title="Projects" />
-            </h1>
+          <StyledProject isDark={context.dark}>
+            {/* <div>Projects IsDark: {context.dark === true ? "true" : "false"}</div> */}
+            <div>
+              <SEO title="Projects" />
+              <h1 className="center upper">
+                <PageTitle title="Projects" />
+              </h1>
 
-            <div className="container-">
-              {projects &&
-                projects.map(({ node }: any, i: number) => {
-                  console.log("node: ", node)
-                  const {
-                    title,
-                    description,
-                    hostUrl,
-                    image,
-                    isFeaturedProject,
-                    technologies,
-                  } = node
-                  const gImage = getImage(image)
-                  // console.log("image: ", image)
-                  // console.log("gImage: ", gImage)
+              <div className="container">
+                {projects &&
+                  projects.map(({ node }: any, i: number) => {
+                    console.log("node: ", node)
+                    const {
+                      title,
+                      description,
+                      hostUrl,
+                      image,
+                      isFeaturedProject,
+                      technologies,
+                    } = node
+                    const gImage = getImage(image)
+                    // console.log("image: ", image)
+                    // console.log("gImage: ", gImage)
 
-                  // const featuredProject = isFeaturedProject ? "Featured Project" : ""
+                    // const featuredProject = isFeaturedProject ? "Featured Project" : ""
 
-                  return (
-                    <StyledProject key={i} isDark={context.dark}>
-                      <div className="project-inner">
+                    return (
+                      <StyledProject key={i} isDark={context.dark}>
+                      <div className="project-inner m-yt">
                         <div className="project-content-wrap">
                           <div className="featured-project">
                             {isFeaturedProject == true && "Featured Project"}
@@ -255,11 +265,12 @@ const ProjectsPage = (props: Props) => {
                           </div>
                         </div>
                       </div>
-                    </StyledProject>
-                  )
-                })}
+                      </StyledProject>
+                    )
+                  })}
+              </div>
             </div>
-          </div>
+          </StyledProject>
         </Layout>
       )}
     </ThemeContext.Consumer>
